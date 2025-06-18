@@ -1,1 +1,13 @@
-<p>layout works!</p>
+<header class="p-4 bg-gray-200 dark:bg-gray-800 text-black dark:text-white flex justify-between">
+  <div>
+    <button (click)="switchLang('zh')">中文</button>
+    <button (click)="switchLang('en')">EN</button>
+    <button (click)="switchLang('fr')">FR</button>
+    <div class="translated-text">{{ "HELLO" | translate }}</div>
+  </div>
+  <button (click)="toggleDarkMode()">🌙 切換主題</button>
+</header>
+
+<main class="p-4">
+  <router-outlet></router-outlet>
+</main>
