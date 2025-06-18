@@ -3,11 +3,12 @@
     <button (click)="switchLang('zh')">中文</button>
     <button (click)="switchLang('en')">EN</button>
     <button (click)="switchLang('fr')">FR</button>
-    <div class="translated-text">{{ "HELLO" | translate }}</div>
   </div>
   <button (click)="toggleDarkMode()">🌙 切換主題</button>
 </header>
 
-<main class="p-4">
+<main class="p-4 min-h-screen bg-white dark:bg-gray-900 text-black dark:text-gray-100">
+  <div class="translated-text"><h1>{{ "HELLO" | translate }}</h1></div>
+  <div class="bg-red-500 dark:bg-green-500">TEST</div>
   <router-outlet></router-outlet>
 </main>
