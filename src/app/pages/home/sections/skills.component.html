@@ -1,1 +1,13 @@
-<p>skills works!</p>
+<section class="mt-12">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+    Skills
+  </h2>
+  <div class="flex flex-wrap gap-2">
+    <span
+      *ngFor="let skill of skills"
+      class="bg-black dark:bg-gray-100 text-white dark:text-black inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
+    >
+      {{ skill }}
+    </span>
+  </div>
+</section>

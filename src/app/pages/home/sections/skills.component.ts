@@ -1,11 +1,34 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-skills',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-
+  skills = [
+    'React',
+    'TypeScript',
+    'Node.js',
+    'JavaScript',
+    'Git',
+    'React Query',
+    'Tailwind CSS',
+    'Redux',
+    'Next.js',
+    'Recharts',
+    'Cypress',
+    'Webpack',
+    'Nginx',
+    'SaaS',
+    'react-i18next',
+    'Web crawlers',
+    'Puppeteer',
+    'RESTful APIs',
+    'Cross-Browser Development',
+    'Figma'
+  ];
 }

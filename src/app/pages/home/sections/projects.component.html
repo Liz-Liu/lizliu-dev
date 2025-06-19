@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<section class="my-20">
+  <h2 class="mb-6 text-center text-3xl font-bold tracking-tighter text-gray-900 sm:text-5xl dark:text-gray-100">
+    Projects
+  </h2>
+
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <app-project-card
+      *ngFor="let p of projects"
+      [href]="p.href"
+      [imgSrc]="p.imgSrc"
+      [title]="p.title"
+      [subtitle]="p.subtitle"
+      [description]="p.description"
+      [tech]="p.tech"
+    ></app-project-card>
+  </div>
+</section>
