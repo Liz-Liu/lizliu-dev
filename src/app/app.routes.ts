@@ -11,7 +11,7 @@ export const routes: Routes = [
       { path: '', component: HomeComponent },
       {
         path: 'blog',
-        loadChildren: () => import('./blog/blog.routes').then(m => m.BLOG_ROUTES)
+        loadChildren: () => import('./pages/blog/blog.routes').then(m => m.BLOG_ROUTES)
       },
       { path: '**', component: NotFoundComponent }
     ]
