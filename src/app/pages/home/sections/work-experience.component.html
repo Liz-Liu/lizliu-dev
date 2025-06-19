@@ -1,1 +1,10 @@
-<p>work-experience works!</p>
+<section class="mt-12">
+  <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">Work Experience</h2>
+  <div class="space-y-8">
+    <app-job-card
+      *ngFor="let job of jobs"
+      [job]="job"
+      [skillKeywords]="skillKeywords"
+    ></app-job-card>
+  </div>
+</section>
