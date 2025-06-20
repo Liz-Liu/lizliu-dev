@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HighlightSkillsPipe } from '../../../shared/pipes/highlight-skills.pipe';
+import { HighlightSkillsPipe } from '../../../shared/pipes/highlight-skills.pipe'; // 請依實際路徑調整
 
 @Component({
   standalone: true,
@@ -15,15 +15,15 @@ export class JobCardComponent {
     tagline: string;
     role: string;
     date: string;
-    details: string[];
     imageUrl: string;
+    details: string[];
   };
 
-  @Input() skillKeywords: string[] = [];
+  @Input() skillKeywords!: string[];
 
   isOpen = false;
 
-  toggleOpen(): void {
+  toggleDetails(): void {
     this.isOpen = !this.isOpen;
   }
 }
