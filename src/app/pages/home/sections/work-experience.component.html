@@ -3,8 +3,12 @@
   <div class="space-y-8">
     <app-job-card
       *ngFor="let job of jobs"
-      [job]="job"
-      [skillKeywords]="skillKeywords"
+      [company]="job.company"
+      [tagline]="job.tagline"
+      [role]="job.role"
+      [date]="job.date"
+      [details]="job.details"
+      [imageUrl]="job.imageUrl"
     ></app-job-card>
   </div>
 </section>

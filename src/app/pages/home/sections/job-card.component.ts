@@ -1,29 +1,54 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, Signal, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HighlightSkillsPipe } from '../../../shared/pipes/highlight-skills.pipe'; // 請依實際路徑調整
 
 @Component({
-  standalone: true,
   selector: 'app-job-card',
-  imports: [CommonModule, HighlightSkillsPipe],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './job-card.component.html',
   styleUrls: ['./job-card.component.scss']
 })
-export class JobCardComponent {
-  @Input() job!: {
-    company: string;
-    tagline: string;
-    role: string;
-    date: string;
-    imageUrl: string;
-    details: string[];
-  };
+export class JobCardComponent implements OnInit {
+  @Input() company!: string;
+  @Input() tagline!: string;
+  @Input() role!: string;
+  @Input() date!: string;
+  @Input() details!: string[];
+  @Input() imageUrl!: string;
 
-  @Input() skillKeywords!: string[];
+  isOpen = signal(false);
+  screenWidth = signal(window.innerWidth);
+  isSmallScreen!: Signal<boolean>;
 
-  isOpen = false;
+  skillKeywords = [
+    'React', 'TypeScript', 'Redux', 'Next.js', 'Recharts', 'Cypress',
+    'Webpack', 'RESTful API', 'Nginx', 'SaaS', 'react-i18next'
+  ];
 
-  toggleDetails(): void {
-    this.isOpen = !this.isOpen;
+  ngOnInit(): void {
+    this.isSmallScreen = computed(() => this.screenWidth() < 768);
+
+    // 初始化正確設置
+    this.screenWidth.set(window.innerWidth);
+
+    // 註冊 resize listener
+    window.addEventListener('resize', () => {
+      this.screenWidth.set(window.innerWidth);
+    });
+  }
+
+  toggle(event?: Event) {
+    if (event) {
+      event.stopPropagation(); // 防止按鈕點擊冒泡
+    }
+    this.isOpen.set(!this.isOpen());
+  }
+
+  highlightSkills(text: string): { text: string; highlight: boolean }[] {
+    const parts = text.split(new RegExp(`(${this.skillKeywords.join('|')})`, 'gi'));
+    return parts.map(part => ({
+      text: part,
+      highlight: this.skillKeywords.includes(part)
+    }));
   }
 }

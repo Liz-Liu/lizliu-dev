@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
-  private darkMode = false;
+  darkMode = signal(false);
 
   constructor() {
     this.initTheme();
@@ -11,23 +11,20 @@ export class ThemeService {
   initTheme(): void {
     const saved = localStorage.getItem('theme');
     if (saved === 'dark') {
-      this.darkMode = true;
+      this.darkMode.set(true);
       document.documentElement.classList.add('dark');
     }
   }
 
   toggleDarkMode(): void {
-    this.darkMode = !this.darkMode;
+    const newState = !this.darkMode();
+    this.darkMode.set(newState);
     const html = document.documentElement;
-    if (this.darkMode) {
+    if (newState) {
       html.classList.add('dark');
     } else {
       html.classList.remove('dark');
     }
-    localStorage.setItem('theme', this.darkMode ? 'dark' : 'light');
-  }
-
-  isDarkMode(): boolean {
-    return this.darkMode;
+    localStorage.setItem('theme', newState ? 'dark' : 'light');
   }
 }
