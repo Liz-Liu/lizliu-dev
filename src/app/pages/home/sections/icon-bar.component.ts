@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ThemeService } from '../../../core/services/theme.service';
 import { CommonModule } from '@angular/common';
 
@@ -14,5 +14,15 @@ export class IconBarComponent {
 
   toggleDarkMode(): void {
     this.themeService.toggleDarkMode();
+  }
+
+  isOpen = signal(false);
+
+  toggleMenu(): void {
+    this.isOpen.set(!this.isOpen());
+  }
+
+  closeMenu(): void {
+    this.isOpen.set(false);
   }
 }
