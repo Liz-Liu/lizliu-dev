@@ -1,4 +1,20 @@
 {
-  "HELLO": "Hello!",
-  "WELCOME": "Welcome to my website!"
+  "HERO": {
+    "GREETING": "Hello, I’m",
+    "INTRO": {
+      "PART1": "I’m a",
+      "ROLE": "Frontend Developer",
+      "PART2": "who loves crafting clean, user-friendly web experiences with thoughtful design and solid code."
+    },
+    "LOCATION": {
+      "PART1": "Originally from",
+      "FROM": "Taiwan🧋",
+      "PART2": "recently back from",
+      "BASED": "a year in Canada 🍁 where I studied French and explored a new pace of life."
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "CONTENT": "A while ago, I decided to step away from the familiar — leaving a stable job in Taiwan to explore life abroad and reconnect with what truly excites me: building meaningful things with code. With two years of experience in Angular and a growing interest in tools like RxJS, Signal, and NgRx, I focus on crafting accessible, performant interfaces that prioritize the user. I'm currently open to new opportunities as a Frontend Engineer — feel free to reach out if you'd like to connect!"
+  }
 }

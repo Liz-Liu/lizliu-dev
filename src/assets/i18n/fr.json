@@ -1,4 +1,20 @@
 {
-  "HELLO": "Bonjour!",
-  "WELCOME": "Bienvenue sur mon site!"
+  "HERO": {
+    "GREETING": "Salut, je m’appelle ",
+    "INTRO": {
+      "PART1": "Je suis une",
+      "ROLE": "développeuse front-end",
+      "PART2": "qui aime créer des expériences web simples, claires et agréables, avec un bon design et un code propre."
+    },
+    "LOCATION": {
+      "PART1": "Originaire de",
+      "FROM": "Taïwan 🧋",
+      "PART2": "je viens de rentrer de",
+      "BASED": "un an passé au Canada 🍁 , où j’ai étudié le français et découvert un nouveau rythme de vie."
+    }
+  },
+  "ABOUT": {
+    "TITLE": "À propos",
+    "CONTENT": "Il y a quelque temps, j’ai quitté un emploi stable à Taïwan pour vivre à l’étranger et retrouver ce qui me passionne vraiment : créer des projets utiles avec du code. J’ai deux ans d’expérience en développement avec Angular, et je m’intéresse de plus en plus à des outils comme RxJS, Signal et NgRx. Je crée des interfaces accessibles et performantes, centrées sur l’utilisateur. En ce moment, je suis à la recherche d’un nouveau poste en tant que développeuse front-end. N’hésitez pas à me contacter si vous souhaitez discuter !"
+  }
 }

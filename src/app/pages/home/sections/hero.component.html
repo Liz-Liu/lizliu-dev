@@ -1,37 +1,36 @@
 <section class="flex flex-col md:flex-row items-center justify-between gap-8">
   <div class="space-y-6">
     <h1 class="text-4xl font-bold leading-tight text-gray-900 dark:text-gray-100">
-      Hi, I’m
-      <span class="text-primary dark:text-white">Yufang</span>
+      {{ 'HERO.GREETING' | translate }}
+      <span class="text-primary dark:text-white">Liz</span>
       <span class="inline-block">👋</span>
     </h1>
 
     <p class="text-lg max-w-2xl leading-relaxed text-gray-700 dark:text-gray-100">
-      I’m a
+      {{ 'HERO.INTRO.PART1' | translate }}
       <span class="font-medium text-gray-800 dark:text-gray-100">
-        Software Engineer
+        {{ 'HERO.INTRO.ROLE' | translate }}
       </span>
-      passionate about building clean, thoughtful applications that feel
-      intuitive — not complicated.
+      {{ 'HERO.INTRO.PART2' | translate }}
     </p>
 
     <div class="text-md text-gray-600 leading-relaxed dark:text-gray-100">
       <p>
-        Originally from
+        {{ 'HERO.LOCATION.PART1' | translate }}
         <span class="font-medium text-gray-700 dark:text-gray-100">
-          Taiwan 🧋
+          {{ 'HERO.LOCATION.FROM' | translate }}
         </span>,
-        now based in
+        {{ 'HERO.LOCATION.PART2' | translate }}
         <span class="font-medium text-gray-700 dark:text-gray-100">
-          Australia 🦘
+          {{ 'HERO.LOCATION.BASED' | translate }}
         </span>.
       </p>
     </div>
   </div>
 
   <img
-    src="assets/Yu-fang Chiu.jpeg"
-    alt="Photo of Yufang"
+    src="assets/liz_liu.jpg"
+    alt="Photo of Liz Liu"
     class="w-36 h-36 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
     width="80"
     height="80"
