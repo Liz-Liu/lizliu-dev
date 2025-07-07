@@ -1,11 +1,11 @@
 <section class="mt-12">
   <h2 class="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">
-    Licenses & Certifications
+     {{ "CERTIFICATIONS.TITLE" | translate }}
   </h2>
   <div class="space-y-8">
-    <ng-container *ngFor="let license of licenses">
+    <ng-container *ngFor="let certification of certifications">
       <a
-        href="{{ license.url }}"
+        href="{{ certification.url }}"
         target="_blank"
         rel="noopener noreferrer"
         class="block"
@@ -45,13 +45,13 @@
           </div>
           <div class="flex flex-col sm:block sm:text-left">
             <h3 class="flex flex-wrap items-center gap-2 text-sm font-semibold sm:text-base">
-              {{ license.title }}
+              {{ certification.title }}
             </h3>
             <p class="mt-2 text-sm text-gray-700 dark:text-gray-100">
-              {{ license.organization }}
+              {{ certification.organization }}
             </p>
             <div class="mt-2 text-sm text-gray-500 dark:text-gray-100">
-              {{ license.date }}
+              {{ certification.date }}
             </div>
           </div>
         </div>

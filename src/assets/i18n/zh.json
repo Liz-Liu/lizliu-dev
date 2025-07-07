@@ -22,25 +22,41 @@
     "SHOW_DETAILS": "顯示詳細資訊",
     "HIDE_DETAILS": "隱藏詳細資訊",
     "JOB1": {
-      "COMPANY": "國泰世華銀行",
+      "COMPANY": "國泰世華商業銀行",
       "TAGLINE": "數位金融創新",
       "ROLE": "前端工程師",
       "DATE": "2022年5月－2024年4月",
-      "DETAILS": [""]
+      "DETAILS": [
+        "使用 Angular、TypeScript 與 RxJS 開發內部系統，負責表單驗證與資料處理，確保功能穩定與流程清晰。",
+        "優化 CI/CD 流程與 configMap 設定，部署錯誤率降低 67%；制定開發準則與元件驗證流程。",
+        "撰寫技術文件與 SOP，協同設計師（Figma）完成介面設計，提升團隊協作與交接效率。"
+    ]
     },
     "JOB2": {
-      "COMPANY": "EVGA公司",
+      "COMPANY": "艾維克科技",
       "TAGLINE": "高效能電腦硬體",
       "ROLE": "UI/UX 設計師",
       "DATE": "2020年5月－2021年6月",
-      "DETAILS": [""]
+      "DETAILS": [
+        "制定 Design Guidelines 與共用元件，強化產品一致性與跨部門開發效率。",
+        "規劃使用者流程，產出 wireframe 與 prototype，優化介面體驗與互動邏輯。",
+        "與跨國團隊合作社群設計素材，社群互動率提升 20%；熟練 Figma 與 UI/UX 設計工具。"
+      ]
     },
     "JOB3": {
       "COMPANY": "樺漢科技",
       "TAGLINE": "工業電腦解決方案",
       "ROLE": "人資專員",
       "DATE": "2016年1月－2019年5月",
-      "DETAILS": [""]
+      "DETAILS": [
+        "負責招募、教育訓練及多項跨部門專案執行，累積良好的溝通與專案推進能力。"
+      ]
     }
+  },
+  "SKILLS": {
+    "TITLE": "技能"
+  },
+   "CERTIFICATIONS": {
+    "TITLE": "專業認證"
   }
 }

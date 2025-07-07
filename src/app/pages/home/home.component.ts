@@ -6,7 +6,7 @@ import { SkillsComponent } from './sections/skills.component';
 import { ProjectsComponent } from './sections/projects.component';
 import { HeroComponent } from './sections/hero.component';
 import { IconBarComponent } from "./sections/icon-bar.component";
-import { LicensesComponent } from "./sections/licenses.component";
+import { certificationsComponent } from './sections/certifications.component';
 
 @Component({
   standalone: true,
@@ -18,7 +18,7 @@ import { LicensesComponent } from "./sections/licenses.component";
     SkillsComponent,
     HeroComponent,
     IconBarComponent,
-    LicensesComponent
+    certificationsComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

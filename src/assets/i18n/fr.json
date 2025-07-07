@@ -26,21 +26,35 @@
       "TAGLINE": "Innovation bancaire numérique",
       "ROLE": "Ingénieure Front-End",
       "DATE": "Mai 2022 – Avril 2024",
-      "DETAILS": [""]
+      "DETAILS": [
+        "Développement de systèmes internes avec Angular, TypeScript et RxJS : gestion de la validation des formulaires et du traitement des données pour garantir la stabilité fonctionnelle et une expérience fluide.",
+        "Optimisation des pipelines CI/CD avec des configurations externes (configMap), réduisant les erreurs de déploiement de 67 % ; contribution à la normalisation des processus de développement.",
+        "Collaboration avec des designers via Figma ; rédaction de documents techniques et de procédures (SOP) pour faciliter le transfert des connaissances et l'intégration des nouveaux membres."
+      ]
     },
     "JOB2": {
       "COMPANY": "EVGA Corporation",
       "TAGLINE": "Informatique haute performance",
       "ROLE": "Designeuse UI/UX",
       "DATE": "Mai 2020 – Juin 2021",
-      "DETAILS": [""]
+      "DETAILS": [
+        "Élaboration de guides de style et de composants réutilisables pour assurer la cohérence des interfaces et améliorer l'efficacité entre équipes.",
+        "Conception de flux utilisateur, wireframes et prototypes afin d’optimiser l’expérience et l’ergonomie du produit.",
+        "Collaboration avec des équipes internationales sur des contenus marketing pour les lancements de produits ; augmentation de 20 % de l’engagement sur les réseaux sociaux."
+      ]
     },
     "JOB3": {
       "COMPANY": "Ennoconn Corporation",
       "TAGLINE": "Solutions informatiques industrielles",
       "ROLE": "Spécialiste des ressources humaines",
       "DATE": "Janvier 2016 – Mai 2019",
-      "DETAILS": [""]
+      "DETAILS": ["Responsable du recrutement, de la formation du personnel et de la coordination des projets interservices."]
     }
+  },
+  "SKILLS": {
+    "TITLE": "Compétences"
+  },
+   "CERTIFICATIONS": {
+    "TITLE": "Certifications professionnelles"
   }
 }

@@ -1,34 +1,32 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
   selector: 'app-skills',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
   skills = [
-    'React',
+    'Angular',
     'TypeScript',
-    'Node.js',
     'JavaScript',
     'Git',
-    'React Query',
-    'Tailwind CSS',
-    'Redux',
-    'Next.js',
-    'Recharts',
-    'Cypress',
-    'Webpack',
+    'RxJS',
     'Nginx',
-    'SaaS',
-    'react-i18next',
-    'Web crawlers',
-    'Puppeteer',
-    'RESTful APIs',
-    'Cross-Browser Development',
-    'Figma'
+    'Figma',
+    'CI/CD',
+    'Azure',
+    'MySQL',
+    'i18n',
+    'Web Design',
+    'HTML',
+    'CSS',
+    'SASS',
+    'Tailwind CSS',
+    'PrimeNG',
   ];
 }

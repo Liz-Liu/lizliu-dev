@@ -1,16 +1,17 @@
 import { Component, Input, OnInit, Signal, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-licenses',
+  selector: 'app-certifications',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './licenses.component.html',
-  styleUrl: './licenses.component.scss'
+  imports: [CommonModule, TranslateModule],
+  templateUrl: './certifications.component.html',
+  styleUrl: './certifications.component.scss'
 })
-export class LicensesComponent {
+export class certificationsComponent {
 
-    licenses = [
+    certifications = [
     {
       title: 'Microsoft Certified: Azure Developer Associate',
       organization: 'Microsoft',

@@ -1,4 +1,11 @@
-import { Component, Input, OnInit, Signal, signal, computed } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  Signal,
+  signal,
+  computed,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
@@ -9,7 +16,7 @@ import { TranslateUtilsService } from '../../../core/services/translate-utils.se
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './job-card.component.html',
-  styleUrls: ['./job-card.component.scss']
+  styleUrls: ['./job-card.component.scss'],
 })
 export class JobCardComponent implements OnInit {
   @Input() imageUrl!: string;
@@ -23,11 +30,20 @@ export class JobCardComponent implements OnInit {
   private sub!: Subscription;
 
   skillKeywords = [
-    'React', 'TypeScript', 'Redux', 'Next.js', 'Recharts', 'Cypress',
-    'Webpack', 'RESTful API', 'Nginx', 'SaaS', 'react-i18next'
+    'Angular',
+    'TypeScript',
+    'JavaScript',
+    'RxJS',
+    'CI/CD',
+    'Figma',
+    '67%',
+    '20%'
   ];
 
-  constructor(private translateUtils: TranslateUtilsService, private translate: TranslateService) {}
+  constructor(
+    private translateUtils: TranslateUtilsService,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
     this.isSmallScreen = computed(() => this.screenWidth() < 768);
@@ -44,14 +60,16 @@ export class JobCardComponent implements OnInit {
     this.details$ = this.translateUtils.getReactiveTranslatedArray(detailsKey);
   }
 
-   ngOnDestroy(): void {
+  ngOnDestroy(): void {
     this.details$.complete();
   }
 
   getAltText(): string {
-  const company = this.translate.instant(`WORK_EXPERIENCE.${this.key}.COMPANY`);
-  return `${company} logo`;
-}
+    const company = this.translate.instant(
+      `WORK_EXPERIENCE.${this.key}.COMPANY`
+    );
+    return `${company} logo`;
+  }
 
   toggle(event?: Event) {
     if (event) {
@@ -61,10 +79,12 @@ export class JobCardComponent implements OnInit {
   }
 
   highlightSkills(text: string): { text: string; highlight: boolean }[] {
-    const parts = text.split(new RegExp(`(${this.skillKeywords.join('|')})`, 'gi'));
-    return parts.map(part => ({
+    const parts = text.split(
+      new RegExp(`(${this.skillKeywords.join('|')})`, 'gi')
+    );
+    return parts.map((part) => ({
       text: part,
-      highlight: this.skillKeywords.includes(part)
+      highlight: this.skillKeywords.includes(part),
     }));
   }
 }
