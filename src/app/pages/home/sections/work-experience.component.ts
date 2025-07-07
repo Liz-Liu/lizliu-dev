@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class WorkExperienceComponent {
   jobs = [
-    { key: 'JOB1', imageUrl: '/assets/logo_Cathay_United_Bank.png' },
-    { key: 'JOB2', imageUrl: '/assets/logo_EVGA.png' }
+    { key: 'JOB1', imageUrl: 'assets/logo_Cathay_United_Bank.png' },
+    { key: 'JOB2', imageUrl: 'assets/logo_EVGA.png' }
   ];
 }

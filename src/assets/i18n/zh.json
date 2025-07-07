@@ -30,7 +30,7 @@
         "使用 Angular、TypeScript 與 RxJS 開發內部系統，負責表單驗證與資料處理，確保功能穩定與流程清晰。",
         "優化 CI/CD 流程與 configMap 設定，部署錯誤率降低 67%；制定開發準則與元件驗證流程。",
         "撰寫技術文件與 SOP，協同設計師（Figma）完成介面設計，提升團隊協作與交接效率。"
-    ]
+      ]
     },
     "JOB2": {
       "COMPANY": "艾維克科技",
@@ -56,7 +56,17 @@
   "SKILLS": {
     "TITLE": "技能"
   },
-   "CERTIFICATIONS": {
-    "TITLE": "專業認證"
+  "CERTIFICATIONS": {
+    "TITLE": "專業認證",
+    "ITEM1": {
+      "CERT_NAME": "微軟認證：Azure 開發人員助理",
+      "ORGANIZATION": "微軟",
+      "DATE": "2025年6月"
+    },
+    "ITEM2": {
+      "CERT_NAME": "微軟認證：網狀架構分析工程師助理",
+      "ORGANIZATION": "微軟",
+      "DATE": "2024年12月"
+    }
   }
 }

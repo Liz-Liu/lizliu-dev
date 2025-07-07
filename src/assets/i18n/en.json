@@ -57,6 +57,16 @@
     "TITLE": "Skills"
   },
    "CERTIFICATIONS": {
-    "TITLE": "Certifications"
+    "TITLE": "Certifications",
+    "ITEM1": {
+      "CERT_NAME" : "Microsoft Certified: Azure Developer Associate",
+      "ORGANIZATION": "Microsoft",
+      "DATE" : "Jun 2025"
+    },
+     "ITEM2": {
+      "CERT_NAME" : "Microsoft Certified: Fabric Analytics Engineer Associate",
+      "ORGANIZATION": "Microsoft",
+      "DATE" : "Dec 2024"
+    }
   }
 }

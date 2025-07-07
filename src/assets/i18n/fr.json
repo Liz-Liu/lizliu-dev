@@ -48,13 +48,25 @@
       "TAGLINE": "Solutions informatiques industrielles",
       "ROLE": "Spécialiste des ressources humaines",
       "DATE": "Janvier 2016 – Mai 2019",
-      "DETAILS": ["Responsable du recrutement, de la formation du personnel et de la coordination des projets interservices."]
+      "DETAILS": [
+        "Responsable du recrutement, de la formation du personnel et de la coordination des projets interservices."
+      ]
     }
   },
   "SKILLS": {
     "TITLE": "Compétences"
   },
-   "CERTIFICATIONS": {
-    "TITLE": "Certifications professionnelles"
+  "CERTIFICATIONS": {
+    "TITLE": "Certifications professionnelles",
+    "ITEM1": {
+      "CERT_NAME": "Microsoft Certified: Azure Developer Associate",
+      "ORGANIZATION": "Microsoft",
+      "DATE": "Juin 2025"
+    },
+    "ITEM2": {
+      "CERT_NAME": "Microsoft Certified: Fabric Analytics Engineer Associate",
+      "ORGANIZATION": "Microsoft",
+      "DATE": "Décembre 2024"
+    }
   }
 }
