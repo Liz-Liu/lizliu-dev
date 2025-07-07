@@ -16,5 +16,38 @@
   "ABOUT": {
     "TITLE": "About",
     "CONTENT": "A while ago, I decided to step away from the familiar — leaving a stable job in Taiwan to explore life abroad and reconnect with what truly excites me: building meaningful things with code. With two years of experience in Angular and a growing interest in tools like RxJS, Signal, and NgRx, I focus on crafting accessible, performant interfaces that prioritize the user. I'm currently open to new opportunities as a Frontend Engineer — feel free to reach out if you'd like to connect!"
+  },
+  "WORK_EXPERIENCE": {
+    "TITLE": "Work Experience",
+    "SHOW_DETAILS": "Show Details",
+    "HIDE_DETAILS": "Hide Details",
+    "JOB1": {
+      "COMPANY": "Cathay United Bank",
+      "TAGLINE": "Digital Banking Innovation",
+      "ROLE": "Front End Engineer",
+      "DATE": "May 2022 - Apr 2024",
+      "DETAILS": [
+        ""
+      ]
+    },
+    "JOB2": {
+      "COMPANY": "EVGA Corporation",
+      "TAGLINE": "High-Performance PC Hardware",
+      "ROLE": "UI/UX Designer",
+      "DATE": "May 2020 - Jun 2021",
+      "DETAILS": [
+        ""
+      ]
+    },
+    "JOB3": {
+      "COMPANY": "Ennoconn Corporation",
+      "TAGLINE": "Industrial Computing Solutions",
+      "ROLE": "Human Resource Specialist",
+      "DATE": "Jan 2016 – May 2019",
+      "DETAILS": [
+        ""
+      ]
+    }
   }
+
 }

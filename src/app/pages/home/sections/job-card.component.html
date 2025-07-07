@@ -6,7 +6,7 @@
 >
   <img
     [src]="imageUrl"
-    [alt]="company + ' logo'"
+    [alt]="getAltText()"
     class="mr-4 mb-2 h-12 w-12 rounded-full object-cover md:mb-0"
   />
 
@@ -16,17 +16,19 @@
         <h3
           class="flex flex-wrap items-center gap-2 text-sm font-semibold sm:text-base"
         >
-          {{ company }}
+           {{ ('WORK_EXPERIENCE.' + key + '.COMPANY') | translate }}
           <span
             class="tagline rounded-md border border-transparent bg-gray-100 px-2 py-0.5 text-xs text-gray-600"
           >
-            {{ tagline }}
+            {{ ('WORK_EXPERIENCE.' + key + '.TAGLINE') | translate }}
           </span>
         </h3>
-        <p class="mt-1 text-sm text-gray-700 dark:text-gray-100">{{ role }}</p>
+        <p class="mt-1 text-sm text-gray-700 dark:text-gray-100">
+            {{ ('WORK_EXPERIENCE.' + key + '.ROLE') | translate }}
+        </p>
       </div>
       <div class="mt-2 text-sm text-gray-500 sm:mt-0 dark:text-gray-100">
-        {{ date }}
+        {{ ('WORK_EXPERIENCE.' + key + '.DATE') | translate }}
       </div>
     </div>
 
@@ -36,7 +38,7 @@
       (click)="toggle($event)"
       class="mt-4 flex items-center gap-2 rounded-lg border border-neutral-300 px-3 py-1.5 text-sm text-black transition hover:bg-neutral-100 dark:border-neutral-600 dark:text-white dark:hover:bg-neutral-800"
     >
-      {{ isOpen() ? "Hide details" : "Show details" }}
+      {{ isOpen() ? ("WORK_EXPERIENCE.HIDE_DETAILS" | translate) : ("WORK_EXPERIENCE.SHOW_DETAILS" | translate) }}
       <span class="w-4 h-4">
         <svg
           *ngIf="isOpen()"
@@ -78,7 +80,7 @@
       }"
     >
       <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-gray-100">
-        <li *ngFor="let item of details" class="pb-3">
+        <li *ngFor="let item of details$ | async" class="pb-3">
           <ng-container *ngFor="let part of highlightSkills(item)">
             <strong
               *ngIf="part.highlight"

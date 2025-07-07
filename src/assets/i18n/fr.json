@@ -16,5 +16,31 @@
   "ABOUT": {
     "TITLE": "À propos",
     "CONTENT": "Il y a quelque temps, j’ai quitté un emploi stable à Taïwan pour vivre à l’étranger et retrouver ce qui me passionne vraiment : créer des projets utiles avec du code. J’ai deux ans d’expérience en développement avec Angular, et je m’intéresse de plus en plus à des outils comme RxJS, Signal et NgRx. Je crée des interfaces accessibles et performantes, centrées sur l’utilisateur. En ce moment, je suis à la recherche d’un nouveau poste en tant que développeuse front-end. N’hésitez pas à me contacter si vous souhaitez discuter !"
+  },
+  "WORK_EXPERIENCE": {
+    "TITLE": "Expérience professionnelle",
+    "SHOW_DETAILS": "Voir plus",
+    "HIDE_DETAILS": "Voir moins",
+    "JOB1": {
+      "COMPANY": "Cathay United Bank",
+      "TAGLINE": "Innovation bancaire numérique",
+      "ROLE": "Ingénieure Front-End",
+      "DATE": "Mai 2022 – Avril 2024",
+      "DETAILS": [""]
+    },
+    "JOB2": {
+      "COMPANY": "EVGA Corporation",
+      "TAGLINE": "Informatique haute performance",
+      "ROLE": "Designeuse UI/UX",
+      "DATE": "Mai 2020 – Juin 2021",
+      "DETAILS": [""]
+    },
+    "JOB3": {
+      "COMPANY": "Ennoconn Corporation",
+      "TAGLINE": "Solutions informatiques industrielles",
+      "ROLE": "Spécialiste des ressources humaines",
+      "DATE": "Janvier 2016 – Mai 2019",
+      "DETAILS": [""]
+    }
   }
 }
