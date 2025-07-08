@@ -1,4 +1,10 @@
-import { inject, Component, signal } from '@angular/core';
+import {
+  inject,
+  Component,
+  signal,
+  HostListener,
+  ElementRef,
+} from '@angular/core';
 import { ThemeService } from '../../../core/services/theme.service';
 import { LanguageService } from '../../../core/services/language.service';
 import { CommonModule } from '@angular/common';
@@ -8,31 +14,42 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-bar.component.html',
-  styleUrls: ['./icon-bar.component.scss']
+  styleUrls: ['./icon-bar.component.scss'],
 })
 export class IconBarComponent {
-  public themeService = inject(ThemeService);
-  public langService = inject(LanguageService);
+  isOpen = signal(false);
+  langs = [
+    { code: 'zh', label: '繁體中文' },
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'Français' },
+  ];
+  currentLang: string;
+
+  constructor(
+    public themeService: ThemeService,
+    private langService: LanguageService,
+    private eRef: ElementRef
+  ) {
+    this.currentLang = this.langService.getCurrentLang();
+  }
 
   toggleDarkMode(): void {
     this.themeService.toggleDarkMode();
   }
 
-  isOpen = signal(false);
   toggleMenu = () => this.isOpen.set(!this.isOpen());
   closeMenu = () => this.isOpen.set(false);
-
-  langs = [
-    { code: 'zh', label: '繁體中文' },
-    { code: 'en', label: 'English' },
-    { code: 'fr', label: 'Français' }
-  ];
-
-  currentLang = this.langService.getCurrentLang();
 
   selectLang(lang: string): void {
     this.langService.switchLang(lang);
     this.currentLang = lang;
     this.isOpen.set(false);
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClickOutside(event: MouseEvent) {
+    if (!this.eRef.nativeElement.contains(event.target)) {
+      this.isOpen.set(false);
+    }
   }
 }
