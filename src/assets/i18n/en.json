@@ -1,21 +1,14 @@
 {
   "HERO": {
-    "GREETING": "Hello, I’m",
+    "GREETING": "Hello, I'm",
     "INTRO": {
-      "PART1": "I’m a",
-      "ROLE": "Frontend Developer",
-      "PART2": "who loves crafting clean, user-friendly web experiences with thoughtful design and solid code."
-    },
-    "LOCATION": {
-      "PART1": "Originally from",
-      "FROM": "Taiwan🧋",
-      "PART2": "recently back from",
-      "BASED": "a year in Canada 🍁 where I studied French and explored a new pace of life."
+      "PART1": "a front-end engineer from Taiwan 🧋, passionate about building clean, intuitive, and user-friendly web interfaces.",
+      "PART2": "Not long ago, I returned to Taiwan after a year of exploration in Canada 🍁 . During that time, I studied French, slowed down to reflect on life, and strengthened my passion for front-end development."
     }
   },
   "ABOUT": {
-    "TITLE": "About",
-    "CONTENT": "A while ago, I decided to step away from the familiar — leaving a stable job in Taiwan to explore life abroad and reconnect with what truly excites me: building meaningful things with code. With two years of experience in Angular and a growing interest in tools like RxJS, Signal, and NgRx, I focus on crafting accessible, performant interfaces that prioritize the user. I'm currently open to new opportunities as a Frontend Engineer — feel free to reach out if you'd like to connect!"
+    "TITLE": "About Me",
+    "CONTENT": "I worked as a front-end engineer at a bank for two years, focusing on building internal form systems using Angular. I collaborated closely with designers and back-end engineers to ensure functionality stability and UI consistency. This experience helped me develop strong communication skills and a steady delivery mindset, with a user-centered approach to development.\n\nCurrently, I’m deepening my knowledge in modern front-end tools such as RxJS, Signal, and NgRx, while gradually building my portfolio and technical confidence through side projects.\n\nTo me, being a reliable engineer means more than keeping up with new technologies — it’s about delivering with care, growing continuously, and getting things done right.\n\nI'm now open to new front-end engineering opportunities. If you’re looking for a dedicated, responsible, and growth-oriented teammate, feel free to reach out!"
   },
   "WORK_EXPERIENCE": {
     "TITLE": "Work Experience",
@@ -56,17 +49,17 @@
   "SKILLS": {
     "TITLE": "Skills"
   },
-   "CERTIFICATIONS": {
+  "CERTIFICATIONS": {
     "TITLE": "Certifications",
     "ITEM1": {
-      "CERT_NAME" : "Microsoft Certified: Azure Developer Associate",
+      "CERT_NAME": "Microsoft Certified: Azure Developer Associate",
       "ORGANIZATION": "Microsoft",
-      "DATE" : "Jun 2025"
+      "DATE": "Jun 2025"
     },
-     "ITEM2": {
-      "CERT_NAME" : "Microsoft Certified: Fabric Analytics Engineer Associate",
+    "ITEM2": {
+      "CERT_NAME": "Microsoft Certified: Fabric Analytics Engineer Associate",
       "ORGANIZATION": "Microsoft",
-      "DATE" : "Dec 2024"
+      "DATE": "Dec 2024"
     }
   }
 }

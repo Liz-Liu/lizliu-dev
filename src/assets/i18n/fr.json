@@ -1,21 +1,14 @@
 {
   "HERO": {
-    "GREETING": "Salut, je m’appelle ",
+    "GREETING": "Salut, moi c’est",
     "INTRO": {
-      "PART1": "Je suis une",
-      "ROLE": "développeuse front-end",
-      "PART2": "qui aime créer des expériences web simples, claires et agréables, avec un bon design et un code propre."
-    },
-    "LOCATION": {
-      "PART1": "Originaire de",
-      "FROM": "Taïwan 🧋",
-      "PART2": "je viens de rentrer de",
-      "BASED": "un an passé au Canada 🍁 , où j’ai étudié le français et découvert un nouveau rythme de vie."
+      "PART1": "une développeuse front-end originaire de Taïwan🧋, passionnée par la création d’interfaces web propres, intuitives et centrées sur l’utilisateur.",
+      "PART2": "Il y a peu, je suis rentrée à Taïwan après une année passée au Canada 🍁 . Cette expérience m’a permis d’apprendre le français, de ralentir le rythme et de mieux réfléchir à mon parcours professionnel. Elle a aussi renforcé ma passion pour le développement front-end."
     }
   },
   "ABOUT": {
-    "TITLE": "À propos",
-    "CONTENT": "Il y a quelque temps, j’ai quitté un emploi stable à Taïwan pour vivre à l’étranger et retrouver ce qui me passionne vraiment : créer des projets utiles avec du code. J’ai deux ans d’expérience en développement avec Angular, et je m’intéresse de plus en plus à des outils comme RxJS, Signal et NgRx. Je crée des interfaces accessibles et performantes, centrées sur l’utilisateur. En ce moment, je suis à la recherche d’un nouveau poste en tant que développeuse front-end. N’hésitez pas à me contacter si vous souhaitez discuter !"
+    "TITLE": "À propos de moi",
+    "CONTENT": "J’ai travaillé pendant deux ans dans une banque en tant que développeuse front-end, où j’ai conçu des systèmes de formulaires internes avec Angular. J’ai collaboré étroitement avec des designers et des développeurs back-end afin d’assurer la stabilité des fonctionnalités et la cohérence de l’interface. Cette expérience m’a permis de développer de solides compétences en communication, une capacité de livraison fiable et une approche centrée sur l’utilisateur.\n\nActuellement, je continue à approfondir mes connaissances sur des outils front-end modernes comme RxJS, Signal et NgRx. Je construis également progressivement mon portfolio à travers des projets personnels pour renforcer ma confiance technique.\n\nPour moi, être une développeuse fiable ne se limite pas à suivre les dernières technologies : c’est aussi savoir livrer avec rigueur, apprendre en continu et faire les choses correctement.\n\nJe suis à la recherche d’un nouveau défi en tant que développeuse front-end. Si vous cherchez une personne sérieuse, responsable et motivée pour progresser, n’hésitez pas à me contacter !"
   },
   "WORK_EXPERIENCE": {
     "TITLE": "Expérience professionnelle",
